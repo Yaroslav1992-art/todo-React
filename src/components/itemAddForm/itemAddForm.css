@@ -1,0 +1,17 @@
+.item-add-form {
+  margin-top: 20px;
+}
+.item-add-form textarea {
+  margin-right: 4px;
+  margin-bottom: 5px;
+  width: 85%; /* Ширина поля в процентах */
+  height: 100px; /* Высота поля в пикселах */
+  resize: none;
+}
+
+.item-add-form button {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  color: white;
+}
