@@ -40,7 +40,7 @@ class App extends Component {
   }
 
   onDeleted = id => {
-    console.log(id);
+    // console.log(id);
     this.setState(({ elements }) => {
       return { elements: elements.filter(post => post.id !== id) };
     });
@@ -119,14 +119,14 @@ class App extends Component {
       this.search(elements, searchValue),
       filter
     );
-    console.log(filter);
-
-    const done = visibleItems.reduce((acc, el) => {
+    // console.log(filter);
+    let done = [];
+    visibleItems.map(el => {
       if (el.done) {
-        acc = acc + 1;
+        done = done + 1;
       }
-      return acc;
-    }, 0);
+      return done;
+    });
 
     return (
       <>

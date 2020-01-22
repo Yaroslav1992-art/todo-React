@@ -14,7 +14,7 @@ class ItemStatusFilter extends Component {
 
     const buttons = this.arrButton.map(({ name }) => {
       const isActive = name === filter;
-      console.log(filter);
+      // console.log(filter);
       return (
         <button
           key={name}
